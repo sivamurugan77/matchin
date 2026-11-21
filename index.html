@@ -3,39 +3,122 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
 <title>MATCH IN – FLAMES</title>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Poppins:wght@300;400;600&family=Great+Vibes&display=swap" rel="stylesheet">
+
+<!-- Faster Google Fonts Connection -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<!-- Fonts -->
+<link
+  href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Poppins:wght@300;400;600&family=Great+Vibes&display=swap"
+  rel="stylesheet"
+>
+
+<!-- Main CSS -->
 <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
+
 <div id="fx"></div>
 <div id="pulse"></div>
 
 <main>
-  <h1 class="logo">MATCH<svg class="lh" viewBox="0 0 32 29"><defs><linearGradient id="hg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e8f6ff"/><stop offset=".5" stop-color="#5ee0ff"/><stop offset="1" stop-color="#1565d8"/></linearGradient></defs><path d="M23.6 0c-3.4 0-5.5 1.8-7.6 4.2C13.9 1.8 11.8 0 8.4 0 3.8 0 0 3.8 0 8.5c0 9.7 16 20.5 16 20.5s16-10.8 16-20.5C32 3.8 28.2 0 23.6 0z" fill="url(#hg)"/></svg>IN</h1>
-  <div class="tag">The classic 90s trick to find your life partner · FLAMES</div>
+
+  <h1 class="logo">
+    MATCH
+    <svg class="lh" viewBox="0 0 32 29">
+      <defs>
+        <linearGradient id="hg" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#e8f6ff"/>
+          <stop offset=".5" stop-color="#5ee0ff"/>
+          <stop offset="1" stop-color="#1565d8"/>
+        </linearGradient>
+      </defs>
+
+      <path
+        d="M23.6 0c-3.4 0-5.5 1.8-7.6 4.2C13.9 1.8 11.8 0 8.4 0 3.8 0 0 3.8 0 8.5c0 9.7 16 20.5 16 20.5s16-10.8 16-20.5C32 3.8 28.2 0 23.6 0z"
+        fill="url(#hg)"
+      />
+    </svg>
+    IN
+  </h1>
+
+  <div class="tag">
+    The classic 90s trick to find your life partner · FLAMES
+  </div>
+
   <div class="card">
+
     <div class="row">
-      <div class="field"><input id="n1" placeholder="Your name..." maxlength="30" autocomplete="off"></div>
+
+      <div class="field">
+        <input
+          id="n1"
+          placeholder="Your name..."
+          maxlength="30"
+          autocomplete="off"
+        >
+      </div>
+
       <div class="mid">🦋</div>
-      <div class="field"><input id="n2" placeholder="Their name..." maxlength="30" autocomplete="off"></div>
+
+      <div class="field">
+        <input
+          id="n2"
+          placeholder="Their name..."
+          maxlength="30"
+          autocomplete="off"
+        >
+      </div>
+
     </div>
-    <button class="btn" id="go">Find Our Match 💙</button>
+
+    <button class="btn" id="go">
+      Find Our Match 💙
+    </button>
+
     <div id="stage">
-      <div class="lbl">Cancelling the common letters</div>
+
+      <div class="lbl">
+        Cancelling the common letters
+      </div>
+
       <div class="names" id="a"></div>
       <div class="names" id="b"></div>
-      <div class="lbl">Remaining letters</div>
+
+      <div class="lbl">
+        Remaining letters
+      </div>
+
       <div id="count"></div>
-      <div class="lbl">F · L · A · M · E · S</div>
+
+      <div class="lbl">
+        F · L · A · M · E · S
+      </div>
+
       <div class="fl" id="fl"></div>
+
       <div class="bpm" id="bpm"></div>
+
     </div>
+
   </div>
+
   <div id="res"></div>
   <div id="hist"></div>
-  <footer>Made with 💙 · MATCH IN · Just for fun!</footer>
+
+  <footer>
+    Made with 💙 · MATCH IN · Just for fun!
+  </footer>
+
 </main>
-<script src="script.js"></script>
+
+<!-- Load JS without blocking HTML rendering -->
+<script src="script.js" defer></script>
+
 </body>
 </html>
